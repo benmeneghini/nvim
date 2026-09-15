@@ -13,6 +13,10 @@ loader.later(function()
     sql = { "sqruff" },
     sh = { "shellcheck" },
     bash = { "shellcheck" },
+    javascript = { "eslint_d" },
+    javascriptreact = { "eslint_d" },
+    typescript = { "eslint_d" },
+    typescriptreact = { "eslint_d" },
   }
 
   autocmds.new({ "BufEnter", "BufWritePost", "InsertLeave" }, {
