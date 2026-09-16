@@ -57,5 +57,5 @@ loader.later(function()
     end,
   })
 
-  vim.cmd.colorscheme("everforest")
+  -- vim.cmd.colorscheme("everforest")
 end)

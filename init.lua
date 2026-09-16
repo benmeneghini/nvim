@@ -72,6 +72,7 @@ local plugins = {
   "plugins.mini-clue",
 
   -- other plugins
+  "plugins.claude",
   "plugins.codecompanion",
   "plugins.conform",
   "plugins.copilot",

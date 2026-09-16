@@ -24,6 +24,7 @@ local E = function(plugin, func) return C("lua require('" .. plugin .. "')." .. 
 -- Leader mappings and descriptions, exported at the bottom of this module
 -- for mini.clue's setup (plugins/mini-clue.lua requires us).
 M.leader_group_clues = {
+  { mode = {"n", "x"}, keys = L"a",  desc = "+AI" },
   { mode = "n",        keys = L"b",  desc = "+Buffer" },
   { mode = {"n", "x"}, keys = L"c",  desc = "+Copilot" },
   { mode = "n",        keys = L"e",  desc = "+Explore" },
@@ -63,6 +64,21 @@ map("nxo", "S",         E("leap.treesitter", "select()"),                      "
 map("n",   L" ",        C"Pick files",                                         "Find files")
 map("n",   L",",        C"Pick buffers",                                       "Switch buffer")
 map("n",   L"/",        C"Pick buf_lines scope='current' preserve_order=true", "Lines (current)")
+
+-- ---------------------------------------------------------------------------
+-- AI (Claude)
+-- ---------------------------------------------------------------------------
+
+map("n",   L"aa",       C"ClaudeCodeDiffAccept",                               "Accept diff")
+map("n",   L"ab",       C"ClaudeCodeAdd %",                                    "Add current buffer")
+map("n",   L"aC",       C"ClaudeCode --continue",                              "Continue Claude")
+map("n",   L"ac",       C"ClaudeCode",                                         "Toggle Claude")
+map("n",   L"ad",       C"ClaudeCodeDiffDeny",                                 "Deny diff")
+map("n",   L"af",       C"ClaudeCodeFocus",                                    "Focus Claude")
+map("n",   L"am",       C"ClaudeCodeSelectModel",                              "Select model")
+map("n",   L"ar",       C"ClaudeCode --resume",                                "Resume Claude")
+map("nx",  L"as",       C"ClaudeCodeSend",                                     "Send to Claude")
+map("n",   L"at",       C"ClaudeCodeTreeAdd",                                  "Add file (tree)")
 
 -- ---------------------------------------------------------------------------
 -- Buffer

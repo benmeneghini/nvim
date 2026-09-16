@@ -49,5 +49,5 @@ loader.now(function()
     end,
   })
 
-  -- vim.cmd.colorscheme("cendre")
+  vim.cmd.colorscheme("cendre")
 end)
