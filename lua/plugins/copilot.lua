@@ -14,6 +14,12 @@ loader.later(function()
       enabled = true,
       auto_trigger = true,
       hide_during_completion = false,
+      keymap = {
+        accept = "<C-Space>",
+        accept_word = "<C-w>",
+        accept_line = "<C-e>",
+        dismiss = "<C-d>",
+      },
     },
     panel = { enabled = false },
     filetypes = {
