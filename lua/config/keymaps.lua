@@ -43,6 +43,7 @@ M.leader_group_clues = {
 -- ---------------------------------------------------------------------------
 
 map("i",   "<A-Space>", C"normal ciw",                                         "Just one space")
+map("n",   "<Esc>",     C"nohlsearch",                                         "Clear search highlight")
 map("n",   "-",         C"Oil",                                                "Open Oil")
 map("n",   "H",         C"lua MiniBracketed.buffer('backward')",               "Prev buffer")
 map("n",   "L",         C"lua MiniBracketed.buffer('forward')",                "Next buffer")

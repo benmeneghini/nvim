@@ -15,7 +15,6 @@ loader.later(function()
   -- All language servers are expected to be installed with 'mason.nvim'
   vim.lsp.enable({
     "fennel_ls",
-    "gopls",
     "lua_ls",
     "basedpyright",
     "marksman",
@@ -24,6 +23,10 @@ loader.later(function()
     "helm_ls",
     "rust_analyzer",
     "ts_ls",
+    "eslint",
+    "cssls",
+    "html",
+    "tailwindcss",
     "jsonls",
     "yamlls",
     "zls",

@@ -56,4 +56,6 @@ loader.later(function()
       -- stylua: ignore end
     end,
   })
+
+  vim.cmd.colorscheme("everforest")
 end)

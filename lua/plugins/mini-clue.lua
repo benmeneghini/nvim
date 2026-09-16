@@ -39,6 +39,7 @@ loader.later(function()
       { mode = { "i", "c" }, keys = "<C-r>" },
     },
     window = {
+      delay = 200,
       config = { width = "auto" },
     },
   })
